@@ -51,7 +51,9 @@ Doc SMART on FHIR: https://hl7.org/fhir/smart-app-launch/index.html
 Ejemplo launch.html: http://docs.smarthealthit.org/tutorials/javascript/
 
 Generación de JWT tokens:  https://jwt.io/
+
 Generación de claves: https://travistidwell.com/jsencrypt/demo/
+
 URL Encoder: https://meyerweb.com/eric/tools/dencoder/
 
 
