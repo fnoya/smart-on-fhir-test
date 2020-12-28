@@ -40,3 +40,17 @@ Hay que responderle:
 	}
 
 En el id_token va un token jwt que tiene el fhirUser.
+
+#Documentacion adicional
+Doc client-js: http://docs.smarthealthit.org/client-js/api.html
+http://docs.smarthealthit.org/client-js/client
+
+Doc SMART on FHIR: https://hl7.org/fhir/smart-app-launch/index.html
+
+Ejemplo launch.html: http://docs.smarthealthit.org/tutorials/javascript/
+
+Generación de JWT tokens:  https://jwt.io/
+Generación de claves: https://travistidwell.com/jsencrypt/demo/
+URL Encoder: https://meyerweb.com/eric/tools/dencoder/
+
+
