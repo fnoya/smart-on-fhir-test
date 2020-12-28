@@ -39,6 +39,8 @@ Hay que responderle:
 	        encounter: '987654321'
 	}
 
+Otros atributos que se pueden incluir son need_patient_banner, intent y smart_style_url.  Ver https://hl7.org/fhir/smart-app-launch/scopes-and-launch-context/index.html#launch-context-arrives-with-your-access_token
+
 En el id_token va un token jwt que tiene el fhirUser.
 
 <h2>Documentacion adicional</h2>
