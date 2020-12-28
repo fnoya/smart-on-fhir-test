@@ -29,13 +29,14 @@ FHIR.oauth2.ready()   Invoca por POST al /token con este cuerpo:
 	}
 
 Hay que responderle:
-	<code>{
+
+	{
 	        access_token: '1234567890',
 	        token_type: 'Bearer',
 	        scope: 'launch fhirUser patient/*.read',
 	        id_token: const id_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJwcm9maWxlIjoiUHJhY3RpdGlvbmVyL3NtYXJ0LVByYWN0aXRpb25lci03MjA4MDQxNiIsInBhdGllbnQiOiIxMjMiLCJlbmNvdW50ZXIiOiI1NjciLCJzdWIiOiIzNmExMGJjNGQyYTczNThiNGFmZGFhYWY5YWYzMmJhY2NhY2JhYWJkMTA5MWJkNGE4MDI4NDJhZDVjYWRkMTc4IiwiaXNzIjoiaHR0cDovL2xhdW5jaC5zbWFydGhlYWx0aGl0Lm9yZyIsImlhdCI6MTU1OTM5MjI5NSwiZXhwIjoxNTU5Mzk1ODk1fQ.Gz4AkDYTyf848GURiHhY28cLJlSDTthADWqgUbCCrJK8SZHe_K1ihXDB0oM-P5_rioqnL5LlhSI83zqsNXYr_stZEXA-F9_tIaG74JTM5A-Gd7xixh8qh1DLh7AKCtgCswE6AgtNYq3dYvwhkaV0cLGIfHMvwEt4nmLYuM-GzUU",
 	        patient: '56789',
 	        encounter: '987654321'
-	}</code>
+	}
 
 En el id_token va un token jwt que tiene el fhirUser.
