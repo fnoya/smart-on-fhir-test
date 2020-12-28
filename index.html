@@ -1,0 +1,24 @@
+<script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
+
+<script>
+    function getPatient() {
+
+        FHIR.oauth2.ready().then(function(client) {         
+            console.log("Patient id: " + client.patient.id);  
+            console.log("Encounter id: " + client.encounter.id);    
+            console.log("FhirUser: "+ client.user.fhirUser);   // este está en el id_token en el "claim" fhirUser
+            client.patient.read().then(
+                function(pt) {
+                    document.write(JSON.stringify(pt, null, 4));
+                },
+                function(error) {
+                    document.write( error.stack);
+                }
+            );
+        });       
+    }
+</script>
+
+<body>
+    <button onclick="getPatient()">Obtener Paciente</button>
+</body>

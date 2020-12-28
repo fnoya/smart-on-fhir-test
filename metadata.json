@@ -1,0 +1,67 @@
+{
+    "resourceType" : "CapabilityStatement",
+    "id" : "smart-app-launch-example",
+    "url" : "http://fhir-registry.smarthealthit.org/CapabilityStatement/smart-app-launch-example",
+    "version" : "1.0.0",
+    "name" : "SMART App Launch Capability Statement Example (Empty)",
+    "status" : "draft",
+    "experimental" : true,
+    "date" : "2018-09-18T14:44:43-07:00",
+    "publisher" : "Boston's Children Hospital and Hl7 International",
+    "kind" : "capability",
+    "software" : {
+      "name" : "Insert your softwware name here..."
+    },
+    "fhirVersion" : "3.0.1",
+    "acceptUnknown" : "no",
+    "format" : [
+      "xml",
+      "json"
+    ],
+    "rest" : [
+      {
+        "mode" : "server",
+        "documentation" : "An empty Capability Statement",
+        "security" : {
+          "extension" : [
+            {
+              "extension" : [
+                {
+                  "url" : "token",
+                  "valueUri" : "http://localhost:3000/token"
+                },
+                {
+                  "url" : "authorize",
+                  "valueUri" : "http://localhost:3000/authorize"
+                },
+                {
+                  "url" : "manage",
+                  "valueUri" : "https://my-server.org/authorizations/manage"
+                },
+                {
+                  "url" : "introspect",
+                  "valueUri" : "https://my-server.org/authorizations/introspect"
+                },
+                {
+                  "url" : "revoke",
+                  "valueUri" : "http://localhost:3000/revoke"
+                }
+              ],
+              "url" : "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"
+            }
+          ],
+          "service" : [
+            {
+              "coding" : [
+                {
+                  "system" : "http://hl7.org/fhir/restful-security-service",
+                  "code" : "SMART-on-FHIR"
+                }
+              ],
+              "text" : "OAuth2 using SMART-on-FHIR profile (see http://docs.smarthealthit.org)"
+            }
+          ]
+        }
+      }
+    ]
+  }
