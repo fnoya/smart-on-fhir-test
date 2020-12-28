@@ -41,7 +41,8 @@ Hay que responderle:
 
 En el id_token va un token jwt que tiene el fhirUser.
 
-#Documentacion adicional
+<h2>Documentacion adicional</h2>
+
 Doc client-js: http://docs.smarthealthit.org/client-js/api.html
 http://docs.smarthealthit.org/client-js/client
 
