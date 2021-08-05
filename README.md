@@ -78,4 +78,7 @@ En el ```id_token``` va un token jwt que tiene el ```fhirUser```.
 
 * URL Encoder: https://meyerweb.com/eric/tools/dencoder/
 
+## EJEMPLO de respuesta de /token
+https://hl7.org/fhir/smart-app-launch/example-request-token-post/index.html
+
 
